@@ -429,3 +429,87 @@ botonTodas.onclick = () => {
     toditas.classList.remove("ocultar");
   }
 };
+// // pin
+// // En un documento html crear botones con números del 0 al 9, un botón para reiniciar,
+//  un botón para borrar, y un elemento de texto.
+// // Cuando se presionan los botones de números, se tienen que ir agregando los números en
+//  el elemento de texto. Por ejemplo, si se presiona el 1 y después el 3, se tiene que mostrar "13".
+// // El máximo de dígitos que se pueden ingresar es 6, cuando ya hay 6 dígitos ingresados y
+//  se clickea un nuevo número, no debe pasar nada.
+// // El botón de reiniciar debe borrar todos los dígitos del elemento de texto.
+// // El botón de borrar debe borrar el último dígito del elemento de texto. Por ejemplo, si el pin ingresado
+//  es 2544 y se presiona la tecla borrar, debe quedar en 254
+
+const cero = document.querySelector("#cero");
+const uno = document.querySelector("#uno");
+const dos = document.querySelector("#dos");
+const tres = document.querySelector("#tres");
+const cuatro = document.querySelector("#cuatro");
+const cinco = document.querySelector("#cinco");
+const seis = document.querySelector("#seis");
+const siete = document.querySelector("#siete");
+const ocho = document.querySelector("#ocho");
+const nueve = document.querySelector("#nueve");
+const borra = document.querySelector("#borra");
+const reiniciar = document.querySelector("#reiniciar");
+let pNros = document.querySelector("#totalNros");
+
+cero.onclick = () => {
+  let listo = "0" + pNros.textContent;
+  pNros.textContent = listo;
+};
+
+uno.onclick = () => {
+  let listo = "1" + pNros.textContent;
+  pNros.textContent = listo;
+};
+
+dos.onclick = () => {
+  let listo = "2" + pNros.textContent;
+  pNros.textContent = listo;
+};
+tres.onclick = () => {
+  let listo = "3" + pNros.textContent;
+  pNros.textContent = listo;
+};
+cuatro.onclick = () => {
+  let listo = "4" + pNros.textContent;
+  pNros.textContent = listo;
+};
+cinco.onclick = () => {
+  let listo = "5" + pNros.textContent;
+  pNros.textContent = listo;
+};
+seis.onclick = () => {
+  let listo = "6" + pNros.textContent;
+  pNros.textContent = listo;
+};
+siete.onclick = () => {
+  let listo = "7" + pNros.textContent;
+  pNros.textContent = listo;
+};
+ocho.onclick = () => {
+  let listo = "8" + pNros.textContent;
+  pNros.textContent = listo;
+};
+nueve.onclick = () => {
+  let listo = "9" + pNros.textContent;
+  pNros.textContent = listo;
+};
+
+reiniciar.onclick = () => {
+  let listo = "";
+  pNros.textContent = listo;
+};
+
+borra.onclick = () => {
+  const str = pNros.textContent;
+  const newStr = str.substring(0, str.length - 1);
+  pNros.textContent = newStr;
+};
+
+// favoritos
+// Crear dos contenedores, uno para imágenes y otro para favoritos. En el contenedor de imágenes,
+// agregar al menos 10 imágenes (cualesquiera). Al clickear una imagen en el contenedor de imágenes,
+// se debe agregar la misma imagen en el contenedor de favoritos.
+// Al clickear una imagen en el contenedor de favoritos, se debe eliminar la imagen seleccionada de dicho contenedor.

@@ -157,3 +157,11 @@ h1 {
   color: white;
   background-color: #ff6f91;
 }
+.delosbotones {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  width: 80px;
+}
