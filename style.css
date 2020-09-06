@@ -1,0 +1,159 @@
+body {
+  height: 2000px;
+}
+
+.verde {
+  background-color: green;
+}
+
+.rojo {
+  background-color: red;
+}
+.menosUno {
+  background-color: #845ec2;
+}
+.masUno {
+  background-color: #d65db1;
+}
+.menosCinco {
+  background-color: #ff6f91;
+}
+.masCinco {
+  background-color: #ff9671;
+}
+.menosDiez {
+  background-color: #ffc75f;
+}
+.masDiez {
+  background-color: #f9f871;
+}
+
+.div-colores {
+  background-color: #fbeaff;
+}
+
+.liNegrita {
+  text-decoration: none;
+  color: black;
+  font-weight: 900;
+}
+.gris {
+  color: grey;
+}
+
+.barra {
+  width: 500px;
+  height: 30px;
+  background-color: #eaeaea;
+
+  border-radius: 100px;
+  margin: 20px;
+  display: flex;
+  justify-items: center;
+}
+.clase {
+  height: 100%;
+  border-radius: 100px;
+  background-color: #d65db1;
+}
+
+.diez {
+  height: 100%;
+  border-radius: 100px;
+  background-color: #d65db1;
+  width: 10%;
+}
+
+.veinte {
+  height: 100%;
+  border-radius: 100px;
+  background-color: #d65db1;
+  width: 20%;
+}
+.treinta {
+  height: 100%;
+  border-radius: 100px;
+  background-color: #d65db1;
+  width: 30%;
+}
+.cuarenta {
+  height: 100%;
+  border-radius: 100px;
+  background-color: #d65db1;
+  width: 40%;
+}
+.cincuenta {
+  height: 100%;
+  border-radius: 100px;
+  background-color: #d65db1;
+  width: 50%;
+}
+.sesenta {
+  height: 100%;
+  border-radius: 100px;
+  background-color: #d65db1;
+  width: 60%;
+}
+.setenta {
+  height: 100%;
+  border-radius: 100px;
+  background-color: #d65db1;
+  width: 70%;
+}
+.ochenta {
+  height: 100%;
+  border-radius: 100px;
+  background-color: #d65db1;
+  width: 80%;
+}
+.noventa {
+  height: 100%;
+  border-radius: 100px;
+  background-color: #d65db1;
+  width: 90%;
+}
+.cien {
+  height: 100%;
+  border-radius: 100px;
+  background-color: #d65db1;
+  width: 100%;
+}
+
+.oscuro-encendido {
+  background-color: #311f4e;
+  color: white;
+}
+
+.ocultar {
+  display: none;
+}
+
+.scroll-0-500 {
+  background-color: red;
+}
+
+.scroll-501-1000 {
+  background-color: green;
+}
+
+.scroll-1001-1500 {
+  background-color: blue;
+}
+.scroll-1501-2000 {
+  background-color: orange;
+}
+
+.chica {
+  height: 100px;
+  width: auto;
+}
+
+.grande {
+  height: 500px;
+  width: auto;
+}
+h1 {
+  text-align: center;
+  color: white;
+  background-color: #ff6f91;
+}
