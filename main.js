@@ -454,20 +454,57 @@ const borra = document.querySelector("#borra");
 const reiniciar = document.querySelector("#reiniciar");
 let pNros = document.querySelector("#totalNros");
 
-const limiteDeCar = () => {
-  const nrosListos = pNros.textContent;
+const pararTodo = () => {
+  cero.onclick = () => {
+    let listo = "" + pNros.textContent;
+    pNros.textContent = listo;
+  };
+  uno.onclick = () => {
+    let listo = "" + pNros.textContent;
+    pNros.textContent = listo;
+  };
+  dos.onclick = () => {
+    let listo = "" + pNros.textContent;
+    pNros.textContent = listo;
+  };
+  tres.onclick = () => {
+    let listo = "" + pNros.textContent;
+    pNros.textContent = listo;
+  };
+  cuatro.onclick = () => {
+    let listo = "" + pNros.textContent;
+    pNros.textContent = listo;
+  };
+  cinco.onclick = () => {
+    let listo = "" + pNros.textContent;
+    pNros.textContent = listo;
+  };
+  seis.onclick = () => {
+    let listo = "" + pNros.textContent;
+    pNros.textContent = listo;
+  };
+  siete.onclick = () => {
+    let listo = "" + pNros.textContent;
+    pNros.textContent = listo;
+  };
+  ocho.onclick = () => {
+    let listo = "" + pNros.textContent;
+    pNros.textContent = listo;
+  };
+  nueve.onclick = () => {
+    let listo = "" + pNros.textContent;
+    pNros.textContent = listo;
+  };
+};
 
-  if (nrosListos.length > 6) {
-    cero.disable = true;
-    uno.disable = true;
-    dos.disable = true;
-    tres.disable = true;
-    cuatro.disable = true;
-    cinco.disable = true;
-    seis.disable = true;
-    siete.disable = true;
-    ocho.disable = true;
-    nueve.disable = true;
+const limiteDeCar = () => {
+  let nrosListos = String(pNros.textContent);
+  let largo = nrosListos.length;
+
+  console.log(largo);
+
+  if (largo >= 6) {
+    pararTodo();
   }
 };
 
@@ -541,3 +578,86 @@ nueve.onclick = () => {
 // agregar al menos 10 imágenes (cualesquiera). Al clickear una imagen en el contenedor de imágenes,
 // se debe agregar la misma imagen en el contenedor de favoritos.
 // Al clickear una imagen en el contenedor de favoritos, se debe eliminar la imagen seleccionada de dicho contenedor.
+
+document.querySelector("#f1").onclick = () => {
+  document.querySelector("#f1").classList.add("ocultar");
+  document.querySelector("#fl1").classList.remove("ocultar");
+};
+
+document.querySelector("#f2").onclick = () => {
+  document.querySelector("#f2").classList.add("ocultar");
+  document.querySelector("#fl2").classList.remove("ocultar");
+};
+document.querySelector("#f3").onclick = () => {
+  document.querySelector("#f3").classList.add("ocultar");
+  document.querySelector("#fl3").classList.remove("ocultar");
+};
+document.querySelector("#f4").onclick = () => {
+  document.querySelector("#f4").classList.add("ocultar");
+  document.querySelector("#fl4").classList.remove("ocultar");
+};
+document.querySelector("#f5").onclick = () => {
+  document.querySelector("#f5").classList.add("ocultar");
+  document.querySelector("#fl5").classList.remove("ocultar");
+};
+document.querySelector("#f6").onclick = () => {
+  document.querySelector("#f6").classList.add("ocultar");
+  document.querySelector("#fl6").classList.remove("ocultar");
+};
+document.querySelector("#f7").onclick = () => {
+  document.querySelector("#f7").classList.add("ocultar");
+  document.querySelector("#fl7").classList.remove("ocultar");
+};
+document.querySelector("#f8").onclick = () => {
+  document.querySelector("#f8").classList.add("ocultar");
+  document.querySelector("#fl8").classList.remove("ocultar");
+};
+document.querySelector("#f9").onclick = () => {
+  document.querySelector("#f9").classList.add("ocultar");
+  document.querySelector("#fl9").classList.remove("ocultar");
+};
+document.querySelector("#f10").onclick = () => {
+  document.querySelector("#f10").classList.add("ocultar");
+  document.querySelector("#fl10").classList.remove("ocultar");
+};
+
+document.querySelector("#fl1").onclick = () => {
+  document.querySelector("#fl1").classList.add("ocultar");
+  document.querySelector("#f1").classList.remove("ocultar");
+};
+document.querySelector("#fl2").onclick = () => {
+  document.querySelector("#fl2").classList.add("ocultar");
+  document.querySelector("#f2").classList.remove("ocultar");
+};
+document.querySelector("#fl3").onclick = () => {
+  document.querySelector("#fl3").classList.add("ocultar");
+  document.querySelector("#f3").classList.remove("ocultar");
+};
+document.querySelector("#fl4").onclick = () => {
+  document.querySelector("#fl4").classList.add("ocultar");
+  document.querySelector("#f4").classList.remove("ocultar");
+};
+document.querySelector("#fl5").onclick = () => {
+  document.querySelector("#fl5").classList.add("ocultar");
+  document.querySelector("#f5").classList.remove("ocultar");
+};
+document.querySelector("#fl6").onclick = () => {
+  document.querySelector("#fl6").classList.add("ocultar");
+  document.querySelector("#f6").classList.remove("ocultar");
+};
+document.querySelector("#fl7").onclick = () => {
+  document.querySelector("#fl7").classList.add("ocultar");
+  document.querySelector("#f7").classList.remove("ocultar");
+};
+document.querySelector("#fl8").onclick = () => {
+  document.querySelector("#fl8").classList.add("ocultar");
+  document.querySelector("#f8").classList.remove("ocultar");
+};
+document.querySelector("#fl9").onclick = () => {
+  document.querySelector("#fl9").classList.add("ocultar");
+  document.querySelector("#f9").classList.remove("ocultar");
+};
+document.querySelector("#fl10").onclick = () => {
+  document.querySelector("#fl10").classList.add("ocultar");
+  document.querySelector("#f10").classList.remove("ocultar");
+};
