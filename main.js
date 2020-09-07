@@ -454,58 +454,86 @@ const borra = document.querySelector("#borra");
 const reiniciar = document.querySelector("#reiniciar");
 let pNros = document.querySelector("#totalNros");
 
+const limiteDeCar = () => {
+  const nrosListos = pNros.textContent;
+
+  if (nrosListos.length > 6) {
+    cero.disable = true;
+    uno.disable = true;
+    dos.disable = true;
+    tres.disable = true;
+    cuatro.disable = true;
+    cinco.disable = true;
+    seis.disable = true;
+    siete.disable = true;
+    ocho.disable = true;
+    nueve.disable = true;
+  }
+};
+
 cero.onclick = () => {
   let listo = "0" + pNros.textContent;
   pNros.textContent = listo;
+  limiteDeCar();
 };
 
 uno.onclick = () => {
   let listo = "1" + pNros.textContent;
   pNros.textContent = listo;
+  limiteDeCar();
 };
 
 dos.onclick = () => {
   let listo = "2" + pNros.textContent;
   pNros.textContent = listo;
+  limiteDeCar();
 };
 tres.onclick = () => {
   let listo = "3" + pNros.textContent;
   pNros.textContent = listo;
+  limiteDeCar();
 };
 cuatro.onclick = () => {
   let listo = "4" + pNros.textContent;
   pNros.textContent = listo;
+  limiteDeCar();
 };
 cinco.onclick = () => {
   let listo = "5" + pNros.textContent;
   pNros.textContent = listo;
+  limiteDeCar();
 };
 seis.onclick = () => {
   let listo = "6" + pNros.textContent;
   pNros.textContent = listo;
+  limiteDeCar();
 };
 siete.onclick = () => {
   let listo = "7" + pNros.textContent;
   pNros.textContent = listo;
+  limiteDeCar();
 };
 ocho.onclick = () => {
   let listo = "8" + pNros.textContent;
   pNros.textContent = listo;
+  limiteDeCar();
 };
 nueve.onclick = () => {
   let listo = "9" + pNros.textContent;
   pNros.textContent = listo;
-};
+  limiteDeCar();
 
-reiniciar.onclick = () => {
-  let listo = "";
-  pNros.textContent = listo;
-};
+  reiniciar.onclick = () => {
+    let listo = "";
+    pNros.textContent = listo;
+  };
 
-borra.onclick = () => {
-  const str = pNros.textContent;
-  const newStr = str.substring(0, str.length - 1);
-  pNros.textContent = newStr;
+  borra.onclick = () => {
+    const str = pNros.textContent;
+    const newStr = str.substring(0, str.length - 1);
+    pNros.textContent = newStr;
+    limiteDeCar();
+  };
 };
 
 // favoritos
