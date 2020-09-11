@@ -661,3 +661,34 @@ document.querySelector("#fl10").onclick = () => {
   document.querySelector("#fl10").classList.add("ocultar");
   document.querySelector("#f10").classList.remove("ocultar");
 };
+
+// color-aleatorio
+// Hacer un programa que al apretar la tecla espacio, cambie el color de fondo del body por un color aleatorio.
+//  Para eso, crear una función obtenerColorAleatorio() que devuelva
+//  un string con el formato de ejemplo rgb(0,0,0) donde los valores de r, g y b se generan
+//aleatoriamente (con números del 1 al 255).
+
+// const span1 = document.querySelector("#span1");
+// const span2 = document.querySelector("#span2");
+// const span3 = document.querySelector("#span3");
+// const spanTotal = document.querySelector("#span-total");
+
+// divRandom.style.backgroundColor = (255, 255, 255);
+
+const divRandom = document.querySelector("body");
+
+const obtenerColorAleatorio = () => {
+  const primerNumero = math.floor(Math.random() * 255);
+  const segundoNumero = math.floor(Math.random() * 255);
+  const tercerNumero = math.floor(Math.random() * 255);
+  const nuevoColor = `rbg ${primerNumero}, ${segundoNumero}, ${tercerNumero}`;
+  return nuevoColor;
+};
+
+window.onkeypress = e => {
+  if (e.keycode === 32) {
+    const color = obtenerColorAleatorio();
+
+    divRandom.style.backgroundColor = color;
+  }
+};
