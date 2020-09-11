@@ -678,17 +678,20 @@ document.querySelector("#fl10").onclick = () => {
 const divRandom = document.querySelector("body");
 
 const obtenerColorAleatorio = () => {
-  const primerNumero = math.floor(Math.random() * 255);
-  const segundoNumero = math.floor(Math.random() * 255);
-  const tercerNumero = math.floor(Math.random() * 255);
-  const nuevoColor = `rbg ${primerNumero}, ${segundoNumero}, ${tercerNumero}`;
+  const primerNumero = Math.floor(Math.random() * 255);
+  const segundoNumero = Math.floor(Math.random() * 255);
+  const tercerNumero = Math.floor(Math.random() * 255);
+  const nuevoColor = `rgb(${primerNumero}, ${segundoNumero}, ${tercerNumero})`;
+  console.log(nuevoColor);
   return nuevoColor;
 };
+obtenerColorAleatorio();
 
 window.onkeypress = e => {
-  if (e.keycode === 32) {
+  if (e.keyCode === 32) {
     const color = obtenerColorAleatorio();
 
     divRandom.style.backgroundColor = color;
   }
 };
+console.log(divRandom);
